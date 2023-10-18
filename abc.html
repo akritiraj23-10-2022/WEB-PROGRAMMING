@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        #container{
+            width: 1000px;
+            margin: 0 auto;
+            background-color: aqua;
+            min-height: 625px;
+        }
+
+        h1{
+            height: 100px;
+            padding-top: 30px;
+            background-color: salmon;
+            text-align: center;
+            font-size: 40px;
+        }
+
+        .menu{
+            height: 50px;
+            background-color: darkcyan;
+        }
+
+        .menu a{
+            padding: 15px;
+            font-size: 30px;
+            text-decoration: none;
+        }
+
+        .menu a:hover{
+            background-color: salmon;
+            color: white;
+        }
+        .float p{
+           height: 50px;
+           font-size: 40px;
+           text-align: center;
+       }
+        marquee{
+            float: right;
+           height: 475px;
+           width: 300px;
+           font-size: 30px;
+           text-align: center;
+           font-style: oblique;
+           background-color: gray;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <h1> Website </h1>
+
+        <div class="menu">
+            <a href="#">Home </a>
+            <a href="#">Gallery</a>
+            <a href="#">Contact us</a>
+        </div>
+
+        <div class="float">
+            <p>Notice</p>
+            <marquee behavior="abc" direction="up"> Akriti Raj</marquee>
+        </div>
+    </div>
+</body>
+</html>

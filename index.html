@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<style>
+   *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Times New Roman', Times, serif;
+    }
+    
+    header{
+        position:absolute;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px 200px;
+    }
+
+    header .brand{
+        color:white;
+        font-size: 40px;
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+
+
+    header .navigation-items a{
+        color:white;
+        font-size: 20px;
+        font-weight: 500;
+        text-decoration: none;
+        margin-left: 30px;
+    }
+
+    section{
+        padding: 100px 200px;
+    }
+    .home{
+        min-height:720px;
+        justify-content: center;
+        background-image: url(desk4.jpg);
+        background-size: 100% 100%;
+    }
+    .home .content{
+        color: white;
+        width: 70%;
+        margin-top: 50px;
+    }
+    .home .content h1{
+        font-size: 4em;
+        font-weight: 900;
+        text-transform: uppercase;
+        letter-spacing: 5px;
+        margin-bottom: 40px;
+    }
+    .home .content h1 span{
+        font-size: 1.2em;
+        font-weight: 600;
+    }
+    .home .content p{
+        margin-bottom: 35px;
+    }
+    .home .content a{
+        background: white;
+        padding: 15px 35px;
+        color: blue;
+        font-size: 1.1em;
+        font-weight: 500;
+        text-decoration: none;
+        border-radius: 2px;
+    }
+  
+    .maindiv{
+        width: 70%;
+        height: 400px;
+        position: absolute; 
+        background-image: url(desk4.jpg);
+        background-size: 100% 100%;
+        box-shadow: 1px 2px 10px white;
+        animation: slider 30s infinite linear;
+    }
+    @keyframes slider{
+        0%{background-image: url(desk4.jpg);}
+        20%{background-image: url(desk2.jpg);}
+        45%{background-image: url(sim.jpg);}
+        75%{background-image: url(sim1.jpg);}
+        100%{background-image: url(sim2.jpg);}
+        
+    }
+
+</style>
+<body>
+    <header>
+       <p class="brand"> <u> BIO-DATA </u></p>
+        <div class="navigation">
+            <div class="navigation-items">
+                <a href="#"> Home </a>
+                <a href="AboutMe.html">About me </a>
+                <a href="gallery.html"> Gallery </a>
+                <a href="qualification.html">Educational details </a>
+                <a href="contact.html">Contact</a>
+            </div>
+        </div>
+    </header>
+
+    <section class="home">
+     <div class="maindiv">
+
+        <div class="content">
+            <h1>AbOUt<br> <span> ME </span> </h1>
+            <p>This is khanchan kumari  .I am a student of BA(Bachlor of ARTS).Recently I am studying in L.M COLLAGE (GAYA) </p>
+            <a href="AboutMe.html">Read More</a> 
+        </div>
+    </div>
+    </section>
+        
+</body>
+</html>
